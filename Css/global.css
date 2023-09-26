@@ -2,17 +2,22 @@ body {
     height: 100vh;
     background: #52b69a;
     display: grid;
+    flex-direction: grid;
     justify-content: center;
     align-items: center;
+
 }
 
 .container {
     width: 40%;
     min-width: 450px;
     min-height: 100px;
-    background: white;
+    background: yellow;
     border-radius: 10px;
+
 }
+
+
 
 #newtask {
     position: relative;
@@ -92,11 +97,11 @@ body {
 }
 
 .task:hover {
-background-color: #52b69a;
-border-radius: 1rem;
-opacity: 70%;
-transition: .5s;
-transform: scale(1.1);
+    background-color: #52b69a;
+    border-radius: 1rem;
+    opacity: 70%;
+    transition: .5s;
+    transform: scale(1.1);
 
 
 }
@@ -148,4 +153,44 @@ button p {
 
     text-decoration: line-through;
     color: green;
+}
+
+
+
+@media (max-width: 764px) {
+
+
+
+    #newtask {
+        display: flex;
+        
+        flex-direction: row;
+
+        
+        width: 79%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        
+
+
+    }
+
+    .container {
+
+        border: solid 3px #8d75ec;
+        
+        min-width: 340px;
+        max-width:764px ;
+        margin-left: .4rem;
+        margin: auto;
+
+    }
+
+
+
+    
 }
